@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SmartShop.Api.Abstraction.Bll\SmartShop.Api.Abstraction.Bll.csproj" />
+    <ProjectReference Include="..\SmartShop.Api.Abstraction.Dal\SmartShop.Api.Abstraction.Dal.csproj" />
+    <ProjectReference Include="..\SmartShop.Api.Bll\SmartShop.Api.Bll.csproj" />
+    <ProjectReference Include="..\SmartShop.Api.Dal\SmartShop.Api.Dal.csproj" />
+    <ProjectReference Include="..\SmartShop.Api.Models\SmartShop.Api.Models.csproj" />
+  </ItemGroup>
+
+</Project>

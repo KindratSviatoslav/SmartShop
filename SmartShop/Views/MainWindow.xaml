@@ -1,0 +1,20 @@
+﻿<Window x:Class="SmartShop.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:prism="http://prismlibrary.com/"
+        xmlns:properties="clr-namespace:SmartShop.Properties"
+        xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+        prism:ViewModelLocator.AutoWireViewModel="True"
+        Title="{x:Static properties:Localization.MainWindowTitle}"
+        WindowState="Maximized"
+        Icon="/SmartShop;component/Resources/Images/img_logo.png">
+    <Grid>
+        <ContentControl prism:RegionManager.RegionName="ContentRegion">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="Loaded">
+                    <i:InvokeCommandAction Command="{Binding ContentRegionLoadedCommand}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </ContentControl>
+    </Grid>
+</Window>
